@@ -21,7 +21,6 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 // Area Privata - Backoffice
-Auth::routes();
 
 Route::prefix("admin")->namespace("Admin")->middleware("auth")->group(function() {
     Route::get('/home', 'HomeController@index')->name('home');
